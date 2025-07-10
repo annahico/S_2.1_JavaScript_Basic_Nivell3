@@ -3,12 +3,12 @@
 // ***EXERCICI 1***: 
 // Conversió de funcions: Tens una funció add que accepta dos paràmetres i retorna la seva suma. 
 // Converteix-la en una funció de fletxa. Per exemple:
-// function add(a, b) {
-//     return a + b;
-// }
+function add(a, b) {
+    return a + b;
+}
 
 // ARROW FUNCTION => és una funció anònima que es pot assignar a una variable.
-const add = (a, b) => a + b; // si poso ADD a la funció, no puc tornar a posar add a la arrow function
+const func = (a, b) => a + b; // si poso ADD a la funció, no puc tornar a posar add a la arrow function
 
 console.log(add(5, 3)); 
 
@@ -27,11 +27,43 @@ console.log("Random Number:", randomNumber());
 // La funció ha d'imprimir una salutació que inclogui el nom de la persona. 
 // Per exemple: console.log(Hola, ${this.name});.
 
-class Person {
-    constructor(name) {
-        this.name = name;
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     greet = () => console.log(`Hello ${this.name}`);
+// }
+// const person = new Person("there");
+// person.greet();
+
+const person = {
+    name: "there",
+    greet: () => console.log(`Hello ${this.name}`) 
+};
+person.greet();       
+
+// ***EXERCICI 4***:
+// Funció de fletxa dins d'un loop: 
+// Crea una funció anomenada printNumbers que accepti un array de números i utilitzi un loop for per imprimir cada número a la consola utilitzant una funció de fletxa.
+
+const printNumbers = (numbers) => {
+    for (let i = 0; i < numbers.length; i++) {
+        const printNumber = () => console.log(numbers[i]);
+        printNumber();
     }
-    greet = () => console.log(`Hello ${this.name}`);
 }
-const person = new Person("there");
-person.greet();
+
+const nums = [1, 2, 3, 4];
+printNumbers(nums);
+
+// ***EXERCICI 5***:
+// Funció de fletxa amb 'setTimeout': 
+// Crea una funció de fletxa que imprimeixi un missatge a la consola després d'esperar 3 segons.
+
+const showMessage = () => {
+    setTimeout(() => {
+        console.log("This message is displayed after 3 seconds");
+    }, 3000); // 1000 ms = 1 segon
+};  
+
+showMessage();
