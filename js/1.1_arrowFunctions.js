@@ -1,4 +1,4 @@
-// node js/script.js
+// node 1.1_arrowFunction/script.js
 
 // ***EXERCICI 1***: 
 // Conversió de funcions: Tens una funció add que accepta dos paràmetres i retorna la seva suma. 
