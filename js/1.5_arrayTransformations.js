@@ -1,4 +1,4 @@
-// node 1.4_array/script.js
+// node 1.4_arrayTransformation/script.js
 // QUOKKA: CTRL+K Q
 
 
