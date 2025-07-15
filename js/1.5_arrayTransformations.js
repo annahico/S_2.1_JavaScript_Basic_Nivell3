@@ -53,3 +53,11 @@ const resultat = numeros5
     .reduce((acc, num) => acc + num, 0);
     console.log(resultat);
     
+//** Exercici 6 */
+// Every / Some: Usa every i some per a determinar si tots o alguns dels elements de l'array [11, 12, 13, 14] són majors que 10, respectivament
+
+const numeros6 = [11, 12, 13, 14];
+const totsMajorsQue10 = numeros6.every(numero => numero > 10);
+const algunsMajorsQue10 = numeros6.some(numero => numero > 10);
+console.log(`Tots són majors que 10? ${totsMajorsQue10}`); 
+console.log(`Algun és major que 10? ${algunsMajorsQue10}`); 
