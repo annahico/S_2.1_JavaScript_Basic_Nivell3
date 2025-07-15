@@ -42,7 +42,24 @@ console.log(segon);
 console.log(rest); 
 
 //***EXERCICI 5***:
+// Spread en Funcions: 
+// Crea una funció que accepti tres arguments.
+//  Després, crea una array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta array.
 
+function mostrarInfo(nom, edat, ciutat) {
+    console.log(`${nom} té ${edat} anys i viu a ${ciutat}.`);
+}
 
+const dades = [ 'Anna', 32, 'Barcelona' ];
+mostrarInfo(...dades);
 
+//***EXERCICI 6***:
+// Fusionant Objectes amb Spread: 
+// Crea dos objectes amb propietats diferents. 
+// Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou.
+
+const persona = { nom: 'Anna', edat: 32};
+const direccio = { ciutat: 'Barcelona', pais: 'Espanya' };
+const personaCompleta = {...persona, ...direccio };
+console.log(personaCompleta);
 
