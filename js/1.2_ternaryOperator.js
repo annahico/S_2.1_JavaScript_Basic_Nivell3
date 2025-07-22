@@ -1,11 +1,10 @@
-// node 1.2_ternaryOperator/script.js
 // QUOKKA: CTRL+K Q
-
+console.log("=== INICI DELS EXERCICIS 1.2 ===");
 // ***EXERCICI 1***:
 // Operador ternari bàsic: 
 // Escriu una funció potConduir que accepti l'edat com a paràmetre i utilitzi l'operador ternari per determinar si l'usuari pot conduir. Si l'edat és 18 o més, ha de retornar 'Pots conduir'. 
 // Si no, ha de retornar 'No pots conduir'.
-
+console.log("\n--- Exercici 1 ---");
 function potConduir(edat) {
     return edat >= 18 ? 'Pots conduir' : 'No pots conduir';
 }
@@ -17,7 +16,7 @@ console.log(potConduir(16));
 // Ús amb operadors de comparació: 
 // Escriu una expressió que utilitzi l'operador ternari per determinar quin dels dos nombres donats (num1 i num2) és més gran. 
 // Si num1 és més gran, retorna 'num1 és més gran'. Si no, retorna 'num2 és més gran'.
-
+console.log("\n--- Exercici 2 ---");
 function quinEsMesGran(num1, num2) {
     return num1 > num2 ? 'num1 és més gran' : 
            num1 < num2 ? 'num2 és més gran' : 'num1 i num2 són iguals';
@@ -30,6 +29,7 @@ console.log(quinEsMesGran(100, 100));
 // ***EXERCICI 3***:
 // Ús enllaçat d'operadors ternaris: 
 // Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar si un número és positiu, negatiu o zero.
+console.log("\n--- Exercici 3 ---");
 function determinarSigne(num) {
     return num > 0 ? 'Positiu' :
            num < 0 ? 'Negatiu' : 'Zero';            
@@ -55,7 +55,7 @@ console.log(trobarMaxim(30, 25, 35));
 // Operador ternari dins un bucle: 
 // Escriu una funció parOImpar que accepti un array de números i utilitzi un bucle per a recórrer l'array. 
 // Dins del bucle, utilitza l'operador ternari per a determinar si cada número és parell o imparell.
-
+console.log("\n--- Exercici 4 ---");
 function parOImpar(numeros) {
     for (const num of numeros) {
         console.log(num % 2 === 0 ? `${num} és parell` : `${num} és imparell`);
